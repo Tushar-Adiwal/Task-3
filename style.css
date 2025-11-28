@@ -1,0 +1,150 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial;
+}
+
+body {
+    background:#F2C7C7 ;
+}
+
+/* Navbar */
+
+.navbar-logo {
+    height: 100px;
+    object-fit: contain;
+}
+
+.navbar {
+    background: #FFF;
+    color: #fff;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: rgb(13, 13, 13);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Card Sections */
+.section {
+    flex-grow: 1;
+    padding: 30px;
+    margin: 30px auto;
+    width: 85%;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1f1f1f;
+}
+
+/* Quiz */
+#quiz-box {
+    padding: 20px;
+}
+
+#question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.option {
+    padding: 12px;
+    background: #f0f4ff;
+    margin: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.option:hover {
+    background: #d9e4ff;
+    border-color: #1b66e0;
+}
+
+#next-btn {
+    padding: 12px 25px;
+    background: #1b66e0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* API */
+button {
+    padding: 12px 25px;
+    border-radius: 6px;
+    background: #1b66e0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#joke {
+    font-size: 18px;
+    background: #f0f4ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #FFF;
+    color: rgb(10, 10, 10);
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .section {
+        width: 95%;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+}

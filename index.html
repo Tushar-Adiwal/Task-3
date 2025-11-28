@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - Apex Planet Internship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#">
+            <img src="https://apexplanet.in/wp-content/uploads/2023/08/apspl9-1536x571.png.webp" class="navbar-logo"
+                alt="Apex Planet Logo">
+        </a>
+
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section card">
+        <h2>Interactive Quiz</h2>
+
+        <div id="quiz-box">
+            <p id="question">Loading question...</p>
+
+            <div id="options"></div>
+
+            <button id="next-btn">Next</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <!-- API Fetch Section -->
+    <section id="api" class="section card">
+        <h2>Random Joke API</h2>
+        <p id="joke">Click the button to load a joke.</p>
+        <button onclick="getJoke()">Get Joke</button>
+    </section>
+
+    <footer>
+        <p>Copyright © 2025 ApexPlanet All Rights Reserved | Powered by ApexPlanet</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
